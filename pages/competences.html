@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Compétences - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <style>
+        .skill-badge {
+            display: inline-block;
+            white-space: nowrap; 
+            overflow: hidden;    
+            text-overflow: ellipsis; 
+            min-width: fit-content; 
+            padding: 0.25rem 0.75rem; 
+            font-size: 0.75rem;
+            border-radius: 9999px;
+            background-color: #dbeafe; 
+            color: #1e40af; 
+            margin-right: 0.5rem;
+            margin-top: 0.25rem;
+            width: 100px; 
+            text-align: center;
+        }
+        
+        .skill-item {
+            display: flex;
+            align-items: start;
+        }
+        
+        .skill-description {
+            flex: 1;
+            padding-left: 0.5rem;
+        }
+    </style>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <div data-barba="wrapper">
+    <div data-barba="container" data-barba-namespace="competences">
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="../index.html" class="text-xl font-bold text-gray-800">Antoine Domisse</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="../index.html" class="text-gray-800 hover:text-blue-600 transition">Accueil</a>
+                <a href="projets.html" class="text-gray-800 hover:text-blue-600 transition">Projets</a>
+                <a href="competences.html" class="text-blue-600 font-medium">Compétences</a>
+                <a href="formation.html" class="text-gray-800 hover:text-blue-600 transition">Formation</a>
+                <a href="contact.html" class="text-gray-800 hover:text-blue-600 transition">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-button" class="text-gray-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white w-full">
+            <div class="container mx-auto px-6 py-3 flex flex-col space-y-4">
+                <a href="../index.html" class="text-gray-800 hover:text-blue-600 transition">Accueil</a>
+                <a href="projets.html" class="text-gray-800 hover:text-blue-600 transition">Projets</a>
+                <a href="competences.html" class="text-blue-600 font-medium">Compétences</a>
+                <a href="formation.html" class="text-gray-800 hover:text-blue-600 transition">Formation</a>
+                <a href="contact.html" class="text-gray-800 hover:text-blue-600 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-24 pb-12 bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+        <div class="container mx-auto px-6">
+            <h1 class="text-4xl font-bold text-center">Mes Compétences</h1>
+            <p class="text-xl mt-4 max-w-2xl mx-auto text-center">Découvrez mes compétences techniques et professionnelles dans le domaine du développement web.</p>
+        </div>
+    </header>
+
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">Compétences techniques</h2>
+        
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                <div class="flex items-center mb-6">
+                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-600">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold">Frontend</h3>
+                </div>
+                
+                <ul class="space-y-4">
+                    <li class="skill-item">
+                        <span class="skill-badge">HTML5</span>
+                        <p class="text-gray-700">Structure sémantique, accessibilité web, formulaires avancés</p>
+                    </li>
+                    <li class="skill-item">
+                        <span class="skill-badge">CSS3/SASS</span>
+                        <p class="text-gray-700">Layouts flexbox/grid, animations, responsive design, architecture SASS</p>
+                    </li>
+                    
+                    <li class="skill-item">
+                        <span class="skill-badge">JavaScript</span>
+                        <p class="text-gray-700">ES6+, manipulation DOM, AJAX, fetch API, localStorage</p>
+                    </li>
+                    
+                    <li class="skill-item">
+                        <span class="skill-badge">React</span>
+                        <p class="text-gray-700">Hooks, gestion d'états, context API, création de composants réutilisables</p>
+                    </li>
+                    
+                    <li class="skill-item">
+                        <span class="skill-badge">Tailwind CSS</span>
+                        <p class="text-gray-700">Conception d'interfaces responsives, personnalisation du design system</p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                <div class="flex items-center mb-6">
+                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-600">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 14.25h13.5m-13.5 0a3 3 0 01-3-3m3 3a3 3 0 100 6h13.5a3 3 0 100-6m-16.5-3a3 3 0 013-3h13.5a3 3 0 013 3m-19.5 0a4.5 4.5 0 004.5 4.5h15a4.5 4.5 0 004.5-4.5m-19.5 0v-.75a3.75 3.75 0 013.75-3.75h1.5a3.75 3.75 0 013.75 3.75v.75m-8.25 0h6.75" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold">Backend</h3>
+                </div>
+                
+                <ul class="space-y-4">
+                    <li class="skill-item">
+                        <span class="skill-badge">Python</span>
+                        <p class="text-gray-700">Programmation orientée objet, manipulation de données, scripting</p>
+                    </li>
+                    
+                    <li class="skill-item">
+                        <span class="skill-badge">Flask</span>
+                        <p class="text-gray-700">Création d'API REST, authentification, templating avec Jinja</p>
+                    </li>
+                    
+                    <li class="skill-item">
+                        <span class="skill-badge">Node.js</span>
+                        <p class="text-gray-700">Express, middleware, gestion de requêtes asynchrones</p>
+                    </li>
+                    
+                    <li class="skill-item">
+                        <span class="skill-badge">SQL</span>
+                        <p class="text-gray-700">Conception de bases de données, requêtes complexes, optimisation</p>
+                    </li>
+                    
+                    <li class="skill-item">
+                        <span class="skill-badge">API REST</span>
+                        <p class="text-gray-700">Conception, documentation et consommation d'APIs RESTful</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
+            <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                <div class="flex items-center mb-6">
+                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-600">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold">Outils & DevOps</h3>
+                </div>
+                
+                <ul class="space-y-4">
+                    <li class="skill-item">
+                        <span class="skill-badge">Git</span>
+                        <p class="text-gray-700">Workflows collaboratifs, gestion de branches, résolution de conflits</p>
+                    </li>
+                    
+                    <li class="skill-item">
+                        <span class="skill-badge">GitHub</span>
+                        <p class="text-gray-700">Pull requests, actions CI/CD, gestion des issues et projets</p>
+                    </li>
+                    
+                    <li class="skill-item">
+                        <span class="skill-badge">Docker</span>
+                        <p class="text-gray-700">Création et gestion de conteneurs, composition d'environnements</p>
+                    </li>
+                    
+                    <li class="skill-item">
+                        <span class="skill-badge">VS Code</span>
+                        <p class="text-gray-700">Extensions productives, debugging, personnalisation avancée</p>
+                    </li>
+                    
+                    <li class="skill-item">
+                        <span class="skill-badge">CI/CD</span>
+                        <p class="text-gray-700">Intégration et déploiement continus, automatisation de tests</p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                <div class="flex items-center mb-6">
+                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-600">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold">Design & UX</h3>
+                </div>
+                
+                <ul class="space-y-4">
+                    <li class="skill-item">
+                        <span class="skill-badge">Figma</span>
+                        <p class="text-gray-700">Conception d'interfaces, création de composants, prototypage</p>
+                    </li>
+                    
+                    <li class="skill-item">
+                        <span class="skill-badge">Wireframing</span>
+                        <p class="text-gray-700">Structuration des interfaces, planification du parcours utilisateur</p>
+                    </li>
+                    
+                    <li class="skill-item">
+                        <span class="skill-badge">Responsive</span>
+                        <p class="text-gray-700">Approche mobile-first, adaptation à tous types d'écrans</p>
+                    </li>
+                    
+                    <li class="skill-item">
+                        <span class="skill-badge">UI Design</span>
+                        <p class="text-gray-700">Création d'interfaces cohérentes, attractives et fonctionnelles</p>
+                    </li>
+                    
+                    <li class="skill-item">
+                        <span class="skill-badge">Prototypage</span>
+                        <p class="text-gray-700">Création de maquettes interactives pour tester l'expérience utilisateur</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Compétences transversales</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-600">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold ml-4">Travail en équipe</h3>
+                    </div>
+                    <p class="text-gray-700">Expérience dans la collaboration au sein d'équipes pluridisciplinaires pour atteindre des objectifs communs.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-600">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold ml-4">Gestion de projet</h3>
+                    </div>
+                    <p class="text-gray-700">Capacité à planifier, organiser et suivre le développement d'un projet web de sa conception à sa livraison.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-600">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold ml-4">Résolution de problèmes</h3>
+                    </div>
+                    <p class="text-gray-700">Approche analytique pour identifier et résoudre efficacement les problèmes techniques et fonctionnels.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="../index.html" class="text-xl font-bold">Antoine Domisse</a>
+                    <p class="mt-2 text-gray-400">Développeur web & mobile</p>
+                </div>
+                
+                <div class="flex flex-wrap gap-6">
+                    <a href="../index.html" class="text-gray-400 hover:text-white transition">Accueil</a>
+                    <a href="projets.html" class="text-gray-400 hover:text-white transition">Projets</a>
+                    <a href="competences.html" class="text-gray-400 hover:text-white transition">Compétences</a>
+                    <a href="formation.html" class="text-gray-400 hover:text-white transition">Formation</a>
+                    <a href="contact.html" class="text-gray-400 hover:text-white transition">Contact</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">&copy; 2025 - Tous droits réservés</p>
+                
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+    </div>
+
+    <script src="../assets/js/transitions.js"></script>
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+    <div id="page-transition-overlay" class="fixed inset-0 bg-white bg-opacity-90 flex items-center justify-center z-50 pointer-events-none opacity-0 transition-opacity duration-300">
+        <div class="flex flex-col items-center">
+          <div class="loading-spinner">
+            <div class="spinner-circle"></div>
+            <div class="spinner-circle spinner-circle-2"></div>
+          </div>
+          <p class="mt-4 text-blue-600 font-medium animate-pulse">Chargement en cours...</p>
+        </div>
+      </div>
+      <style>
+        .loading-spinner {
+          position: relative;
+          width: 60px;
+          height: 60px;
+        }
+        
+        .spinner-circle {
+          position: absolute;
+          border: 4px solid transparent;
+          border-top-color: #3b82f6; /* blue-500 */
+          border-radius: 50%;
+          width: 100%;
+          height: 100%;
+          animation: spin 1s linear infinite;
+        }
+        
+        .spinner-circle-2 {
+          border-top-color: transparent;
+          border-right-color: #3b82f6;
+          animation-duration: 0.85s;
+          animation-direction: reverse;
+        }
+        
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+    </style>
+</body>
+</html>
