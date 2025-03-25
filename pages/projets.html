@@ -53,28 +53,100 @@
             <!-- Catégorie: Projets Web -->
             <h2 class="text-2xl font-bold mb-8">Projets Web</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-                <!-- Cross-Dimensional Raiders -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
-                    <img src="../assets/img/icon-jsae.png" alt="Cross-Dimensional Raiders" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Cross-Dimensional Raiders</h3>
-                        <p class="text-gray-700 mb-4">Ce projet est un jeu de type shoot'em up réalisé sur le web. 
+                
+                <!-- iut_link -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition project-card">
+                    <div class="h-48 overflow-hidden bg-gray-200 flex items-center justify-center">
+                        <img src="../assets/img/iut_link.jpg" alt="iut_link" class="w-full object-cover">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">iut_link</h3>
+                        <p class="project-summary">
+                            Ce projet est un réseau social développé pour connecter les étudiants de l'IUT. 
+                            La plateforme permet de créer un compte, personnaliser son profil avec une photo, 
+                            créer et s'abonner à des threads thématiques. Les utilisateurs peuvent partager des messages, 
+                            des émojis et des images. Toutes les données sont stockées dans une base PostgreSQL. 
+                            Le site intègre un système de messagerie en temps réel et de notifications.
+                            Ce projet a été réalisé en équipe de 2 personnes sur une durée de 3 semaines.
+                        </p>
+                        
+                        <div class="project-skills-section">
+                            <h4 class="project-skills-title">Compétences techniques acquises :</h4>
+                            <div class="skills-list">
+                                <span class="skill-tag">HTML/CSS</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">PostgreSQL</span>
+                                <span class="skill-tag">APIs RESTful</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-skills-section">
+                            <h4 class="project-skills-title">Savoir-être acquis :</h4>
+                            <div class="skills-list">
+                                <span class="soft-skill-tag">Travail en équipe</span>
+                                <span class="soft-skill-tag">Communication</span>
+                                <span class="soft-skill-tag">Gestion de projet</span>
+                                <span class="soft-skill-tag">Résolution de problèmes</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="#" class="view-project">
+                                Voir le projet
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 ml-2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                            <a href="https://github.com/Hokle" target="_blank" class="github-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cross-Dimensional Raiders (image fixée) -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition project-card">
+                    <div class="h-48 overflow-hidden bg-gray-200 flex items-center justify-center">
+                        <img src="../assets/img/icon-jsae.png" alt="Cross-Dimensional Raiders" class="w-auto h-full object-contain">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Cross-Dimensional Raiders</h3>
+                        <p class="project-summary">
+                            Ce projet est un jeu de type shoot'em up réalisé sur le web. 
                             Nous pouvons nous enregistrer sur le site afin de jouer, l'utilisateur contrôle un vaisseau qui doit éliminer des vagues d'énnemies. 
-                            Un système de bonus et de changement de dimensions a été implémenter.
-                            Ce projet a été réalisé à 3 pour une durée de réalisation : 2 mois.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">HTML</span>
-                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">CSS</span>
-                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">JavaScript</span>
+                            Un système de bonus et de changement de dimensions a été implémenté.
+                            Ce projet a été réalisé à 3 pour une durée de réalisation : 2 mois.
+                        </p>
+                        
+                        <div class="project-skills-section">
+                            <h4 class="project-skills-title">Compétences techniques acquises :</h4>
+                            <div class="skills-list">
+                                <span class="skill-tag">HTML</span>
+                                <span class="skill-tag">CSS</span>
+                                <span class="skill-tag">JavaScript</span>
+                            </div>
                         </div>
-                        <div class="flex justify-between items-center">
-                            <a href="#" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                        
+                        <div class="project-skills-section">
+                            <h4 class="project-skills-title">Savoir-être acquis :</h4>
+                            <div class="skills-list">
+                                <span class="soft-skill-tag">Travail en équipe</span>
+                                <span class="soft-skill-tag">Organisation</span>
+                                <span class="soft-skill-tag">Résolution de problèmes</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="#" class="view-project">
                                 Voir le projet
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 ml-2">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                                 </svg>
                             </a>
-                            <a href="https://github.com/Hokle" target="_blank" class="text-gray-600 hover:text-gray-800">
+                            <a href="https://github.com/Hokle" target="_blank" class="github-link">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                                 </svg>
@@ -83,28 +155,48 @@
                     </div>
                 </div>
     
-                <!-- Crabot -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
-                    <img src="../assets/img/crabot.png" alt="Crabot" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Crabot</h3>
-                        <p class="text-gray-700 mb-4">Ce projet est un dashboard pour utiliser un bot discord.
-                            On peut se conneccter avec son compte discord, voir les statistiques des servers de l'utilisateur et le paramétrer
+                <!-- Crabot (image fixée) -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition project-card">
+                    <div class="h-48 overflow-hidden bg-gray-200 flex items-center justify-center">
+                        <img src="../assets/img/crabot.png" alt="Crabot" class="w-auto h-full object-contain">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Crabot</h3>
+                        <p class="project-summary">
+                            Ce projet est un dashboard pour utiliser un bot discord.
+                            On peut se connecter avec son compte discord, voir les statistiques des servers de l'utilisateur et le paramétrer
                             grâce au bot. Plein de fonctionnalités de modération et de gestion de serveur sont disponibles.
-                            Ce projet est réalisé seul en 1 mois.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">React</span>
-                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">JavaScript</span>
-                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">MongoDB</span>
+                            Ce projet est réalisé seul en 1 mois.
+                        </p>
+                        
+                        <div class="project-skills-section">
+                            <h4 class="project-skills-title">Compétences techniques acquises :</h4>
+                            <div class="skills-list">
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">MongoDB</span>
+                                <span class="skill-tag">API Discord</span>
+                                <span class="skill-tag">OAuth</span>
+                            </div>
                         </div>
-                        <div class="flex justify-between items-center">
-                            <a href="#" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                        
+                        <div class="project-skills-section">
+                            <h4 class="project-skills-title">Savoir-être acquis :</h4>
+                            <div class="skills-list">
+                                <span class="soft-skill-tag">Autonomie</span>
+                                <span class="soft-skill-tag">Gestion de projet</span>
+                                <span class="soft-skill-tag">Persévérance</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="#" class="view-project">
                                 Voir le projet
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 ml-2">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                                 </svg>
                             </a>
-                            <a href="https://github.com/Hokle" target="_blank" class="text-gray-600 hover:text-gray-800">
+                            <a href="https://github.com/Hokle" target="_blank" class="github-link">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                                 </svg>
@@ -113,26 +205,46 @@
                     </div>
                 </div>
     
-                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
-                    <img src="../assets/img/portfolio-preview.jpg" alt="Portfolio" class="w-full h-48 object-cover bg-gray-100">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Paku.io</h3>
-                        <p class="text-gray-700 mb-4">Ce portfolio présente mes projets, compétences et mon parcours professionnel. 
-                            Il intègre des transitions de page fluides avec Barba.js et GSAP pour une expérience utilisateur optimale.
-                            La conception est responsive pour s'adapter à tous les appareils.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">HTML</span>
-                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">TailwindCSS</span>
-                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">JavaScript</span>
+                <!-- Paku.io -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition project-card">
+                    <div class="h-48 overflow-hidden bg-gray-200 flex items-center justify-center">
+                        <img src="../assets/img/pakuio.jpg" alt="Paku.io" class="w-full object-cover">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Paku.io</h3>
+                        <p class="project-summary">
+                            Ce projet est une sorte d'autre version du jeu agar.io mais dans le thème de PACMAN. On peut donc jouer en multijoueur,
+                            avec des bots tout en ayant les mêmes fonctionnalités qu'agar.io, donc le split et l'envoie de masse. Ce projet a été réalisé
+                            en 1 semaines dans un groupe de 3 personnes.
+                        </p>
+                        
+                        <div class="project-skills-section">
+                            <h4 class="project-skills-title">Compétences techniques acquises :</h4>
+                            <div class="skills-list">
+                                <span class="skill-tag">HTML</span>
+                                <span class="skill-tag">TailwindCSS</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Express</span>
+                            </div>
                         </div>
-                        <div class="flex justify-between items-center">
-                            <a href="#" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                        
+                        <div class="project-skills-section">
+                            <h4 class="project-skills-title">Savoir-être acquis :</h4>
+                            <div class="skills-list">
+                                <span class="soft-skill-tag">Créativité</span>
+                                <span class="soft-skill-tag">Attention aux détails</span>
+                                <span class="soft-skill-tag">Auto-évaluation</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="#" class="view-project">
                                 Voir le projet
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 ml-2">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                                 </svg>
                             </a>
-                            <a href="https://github.com/Hokle" target="_blank" class="text-gray-600 hover:text-gray-800">
+                            <a href="https://github.com/Hokle" target="_blank" class="github-link">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                                 </svg>
@@ -142,91 +254,57 @@
                 </div>
             </div>
     
+            <!-- Catégorie: Projets Jeux -->
             <h2 class="text-2xl font-bold mb-8">Projets Jeux</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
-                    <img src="../assets/img/ChasseMonstre.png" alt="Chasse au monstre" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Chasse au monstre</h3>
-                        <p class="text-gray-700 mb-4">Ce projet est un jeu de chasse au monstre, C'est un jeu en mutlijoueur (même jouable en solo). 
-                            Dans ce jeu un chasseur doit tirer sur un monstre qui lui tente de s'échapper. 
-                            Tout en sachant que la partie est paramétrable. La carte de jeu possède un labyrinthe généré aléatoirement allongeant le chemin du montre.
-                            Ce projet a été réalisé à 2 en 1 mois.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Java</span>
+                <!-- Chasse au monstre (image fixée) -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition project-card">
+                        <div class="h-48 overflow-hidden bg-gray-200 flex items-center justify-center">
+                            <img src="../assets/img/ChasseMonstre.png" alt="Chasse au monstre" class="w-auto h-full object-contain">
                         </div>
-                        <div class="flex justify-between items-center">
-                            <a href="#" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
-                                Voir le projet
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 ml-2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                                </svg>
-                            </a>
-                            <a href="https://github.com/Hokle" target="_blank" class="text-gray-600 hover:text-gray-800">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
-                    <img src="../assets/img/rpg-game.jpg" alt="RPG Game" class="w-full h-48 object-cover bg-gray-200">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Adventure Quest</h3>
-                        <p class="text-gray-700 mb-4">Un jeu de rôle textuel où le joueur progresse à travers différents niveaux en combattant des monstres
-                            et en améliorant son personnage. Le jeu dispose d'un système d'inventaire, de compétences et de quêtes.
-                            Réalisé en solitaire en 3 semaines comme projet personnel.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Python</span>
-                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">SQLite</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <a href="#" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
-                                Voir le projet
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 ml-2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                                </svg>
-                            </a>
-                            <a href="https://github.com/Hokle" target="_blank" class="text-gray-600 hover:text-gray-800">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                </svg>
-                            </a>
+                        <div class="project-content">
+                            <h3 class="project-title">Chasse au monstre</h3>
+                            <p class="project-summary">
+                                Ce projet est un jeu de chasse au monstre, C'est un jeu en multijoueur (même jouable en solo). 
+                                Dans ce jeu un chasseur doit tirer sur un monstre qui lui tente de s'échapper. 
+                                Tout en sachant que la partie est paramétrable. La carte de jeu possède un labyrinthe généré aléatoirement allongeant le chemin du monstre.
+                                Ce projet a été réalisé à 2 en 1 mois.
+                            </p>
+                            
+                            <div class="project-skills-section">
+                                <h4 class="project-skills-title">Compétences techniques acquises :</h4>
+                                <div class="skills-list">
+                                    <span class="skill-tag">Java</span>
+                                    <span class="skill-tag">Architecture MVC</span>
+                                    <span class="skill-tag">Génération procédurale</span>
+                                    <span class="skill-tag">Interface graphique</span>
+                                </div>
+                            </div>
+                            
+                            <div class="project-skills-section">
+                                <h4 class="project-skills-title">Savoir-être acquis :</h4>
+                                <div class="skills-list">
+                                    <span class="soft-skill-tag">Collaboration</span>
+                                    <span class="soft-skill-tag">Communication</span>
+                                    <span class="soft-skill-tag">Planification</span>
+                                </div>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="#" class="view-project">
+                                    Voir le projet
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 ml-2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                                    </svg>
+                                </a>
+                                <a href="https://github.com/Hokle" target="_blank" class="github-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-    
-            <h2 class="text-2xl font-bold mb-8">Projets Applications</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
-                    <img src="../assets/img/app-mobile.jpg" alt="Application Mobile" class="w-full h-48 object-cover bg-gray-200">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Gourmand</h3>
-                        <p class="text-gray-700 mb-4">Application mobile de recettes de cuisine permettant aux utilisateurs de consulter, 
-                            créer et partager des recettes. Fonctionnalités de recherche avancée, de filtre par ingrédients et de liste de courses intégrée.
-                            Projet académique réalisé en équipe de 4 sur 2 mois.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">React Native</span>
-                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Firebase</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <a href="#" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
-                                Voir le projet
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 ml-2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                                </svg>
-                            </a>
-                            <a href="https://github.com/Hokle" target="_blank" class="text-gray-600 hover:text-gray-800">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
